@@ -1,27 +1,25 @@
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ReadFile {
+    public static void main(String[] args) throws FileNotFoundException {
+        ReadThisFile();
+    }
 
-    public void ReadThisFile() throws FileNotFoundException {
-        ArrayList<String> strings = new ArrayList<>();
-        File readStrings = new File("inheritanceAndFiles/Ressources/ReadStrings.CSV");
-        Scanner filScanner = new Scanner(readStrings);
-        filScanner.nextLine();
+    public static void ReadThisFile() throws FileNotFoundException {
+        File file = new File("inheritanceAndFiles/Ressources/ReadStrings.CSV");
+        Scanner filScn = new Scanner(new FileInputStream(file));
 
-        while(filScanner.hasNext()){
-            String thisLine = filScanner.nextLine();
+            filScn.nextLine();
 
-            String[] lineAsArray = thisLine.split(";");
-            String name = lineAsArray[0];
-            String color = lineAsArray[1];
-
-            strings.add(name);
-            strings.add(color);
-
-        }
-        
+            int count = 0;
+            while(filScn.hasNext()){
+                String words = filScn.next();
+                count++;
+            }
+            System.out.println("Amount of words in file: " + count);
     }
 }
