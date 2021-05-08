@@ -17,8 +17,4 @@ public class Main {
             System.out.println(bilerArrayList.get(i).bilLyd());
         }
     }
-
-
-
-
 }

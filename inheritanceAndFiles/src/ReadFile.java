@@ -10,7 +10,7 @@ public class ReadFile {
     }
 
     public static void ReadThisFile() throws FileNotFoundException {
-        File file = new File("inheritanceAndFiles/Ressources/ReadStrings.CSV");
+        File file = new File("inheritanceAndFiles/Ressources/ReadStrings.csv");
         Scanner filScn = new Scanner(new FileInputStream(file));
 
             filScn.nextLine();
