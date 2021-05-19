@@ -1,0 +1,7 @@
+Inheritance er måden en subclass kan arve en superclass’ attributter, constructor og metoder på.
+Inheritance gør den kode vi skriver mere genbrugelig, fordi den class der bliver til en subclass, får de fields og
+metoder der allerede er skrevet i superclassen.
+Inheritance sker ved at en subclass bruger nøgleordet extend på classsignaturen. Polymorphism er en stor del af inheritance.
+Polymorphism gør at den samme kode kan blive brugt af forskellige objekter og koden kan opføre sig anderledes på baggrund af objektet.
+Dette sker blandt andet når vi laver instanser af vores subclass’, fordi selvom det er den samme metode alle klasserne deler fra deres superclass,
+opfører metoden sig stadig anderledes på baggrund af, hvilken subclass man kalder.
