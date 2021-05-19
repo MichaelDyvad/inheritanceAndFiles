@@ -1,8 +1,8 @@
-//Exercise 2: Write a program that exemplifies the concept of inheritance.
+package exercise2;//Exercise 2: Write a program that exemplifies the concept of inheritance.
 // Comment the pro-gram accordingly to describe your example.
 // You should use real-life concepts as classes in the program
 
-//Der bliver lavet en abstract class "Biler", som gør andre class kan arve attributter, constructor og metoder.
+//Der bliver lavet en abstract class "exercise2.Biler", som gør andre class kan arve attributter, constructor og metoder.
 public abstract class Biler {
     //Attributes
     public String farve;
